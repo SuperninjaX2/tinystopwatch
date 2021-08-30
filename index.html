@@ -5,24 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>HTML</title>
+    <title>tiny calculator</title>
 
     <!-- HTML -->
-
-
+    <link rel="stylesheet" href="dist/css/Bootstrap.css">
+    <!--by josé dé lungu-->
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body ondblclick="eff()" id="body">
+    <aside>
+        <h1 id="h"> Tiny Stopwatch </h1>
+        <p class="lead">
+            by josé dé lungu
+        </p>
+
+    </aside>
+
     <div id="container">
-    <p id="display">
-        Nothing to see here...
-    </p>
+        <p id="display">
+            00.00.00.00
+        </p>
     </div>
-    <button id="btn">start</button>
-    <button id="stop">stop</button>
+    <button class="btn btn-secondary"id="btn">start</button>
+    <button class="btn btn-danger" id="stop">stop</button>
+    <button id="reset"class="btn btn-info">reset</button>
+    
+        <p class="lead">isn't it awesome 😎</p>
+    
     <!-- Project -->
     <script src="script.js"></script>
+    <script src="dist/js/Bootstrap.js"></script>
 </body>
 </html>
