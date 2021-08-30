@@ -3,10 +3,33 @@ body{
     display: block;
     text-align: center;
 }
-#container{
-    width:50vw;
-    height: 60vw;
-    border: dashed ;
-    border-radius: 50%;
-   border-color: red;
+#display{
+    font-size: 60px;
+}
+.lead{
+    position: relative;
+    animation-name: Cool;
+    animation-duration: 10s;
+   
+}
+@keyframes Cool{
+    0%{
+        top:90vw;
+        bottom:0vw;
+        color: grey;
+    }
+    10%{
+        top:50vw;
+        bottom:50vw;
+        color: blue;
+    }
+    25%{
+        top: 0vw;
+        bottom:90vw;
+        color: green;
+    }
+    100%{
+        color: black;
+         }
+    
 }

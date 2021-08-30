@@ -7,7 +7,9 @@ function start() {
     timer=setInterval(()=>{
         x+=10;
         let dateTimer = new Date(x);
-        
+       clock.style.color="grey" ;
+       
+       
      clock.innerHTML = 
           ('0'+dateTimer.getUTCHours()).slice(-2) + ':' +
           ('0'+dateTimer.getUTCMinutes()).slice(-2) + ':' +
@@ -19,6 +21,7 @@ function start() {
 
 
 function pause(){
+    clock.style.color="red";
     clearInterval(timer);
 }
  
@@ -33,7 +36,23 @@ document.addEventListener("click",(c)=>{
     
     if (j.id==="stop") 
         pause();
+     if (j.id==="reset") {
+         reset()
+     }   
+     
     
 });
 
-         
+         /*touch*/
+const touch=document.getElementById("body");
+let title=document.getElementById("h");
+
+function eff() {
+    touch.style.backgroundColor="black";
+    clock.style.color="white";
+    title.style.color="white";
+    // body...
+}
+/*touch.addEventListener("dblclick",()=>{
+   eff()
+})*/
